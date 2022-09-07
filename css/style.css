@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;  
+}
+
+body{
+    margin-left: 1%;
+}
+
+h1{
+    text-align:center;
+    margin-top: 40px;
+    font-size: 175%;
+}
+h2{
+    background-color: #fff;
+    border: 1px solid #002795;
+    width: 30%;
+    text-align: center;
+    font-size: 125%;
+    padding: 3px;
+}
+
+.row{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.row > section{
+    background-color: #6D24CF;
+    border: 1px solid #002795;
+}
+
+.row > section > p {
+    width: 90%;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #FFE06F;
+    padding-top: 50px;
+    overflow: auto;
+}
+
+#sec1{
+    background-color: #68D69D;
+    color: #401D83;
+}
+
+#sec2{
+    background-color: #FFD154;
+    color: #002795;
+}
+
+#sec3{
+    background-color: #D4B5FF;
+    color: #002795;
+}
+
+
+/* desktop media */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 32%;
+        margin: 0.5%;
+    }
+}
+
+/* tablet media */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12{
+        float: left;
+        margin: 0.5%;
+    }
+    .col-md-6 {
+        width: 49%;
+    }
+    .col-md-12 {
+        clear:left; /*delete attr left floated*/
+    }
+    .row{
+        margin-top: 40px;
+    }
+
+}
+
+/* mobile media */
+@media (max-width: 767px) {
+    .col-sm-12{
+        clear:left; /*delete attr left floated*/
+        margin: 10px;
+    }
+    .row{
+        margin-top: 30px;
+    }
+
+}
+
+/* relative absolute */
+.row > section {
+    position: relative;
+
+}
+
+.row > section > h2 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
